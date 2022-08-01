@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody _rigidbodyp;
-    public GameObject projectile;
+    public GameObject _projectile;
     public float _speed = 10f;
-    public Transform parent;
-    
+    public Transform _parent;
 
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -29,11 +29,11 @@ public class PlayerMovement : MonoBehaviour
        if (Input.GetButtonDown("Fire1")){
             for (int i = 0; i < 5; i++) 
             {
-              Object.Instantiate(projectile ,  parent);
+              Object.Instantiate(_projectile, _parent);
             }
         }
-       
-       
+        
+
     }
     private void OnCollisionEnter(Collision collision)
     {
