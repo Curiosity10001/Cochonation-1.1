@@ -5,22 +5,24 @@ using UnityEngine;
 public class ProjectileMovement : MonoBehaviour
 {
     public Rigidbody _Rigidbody;
-    public float _speed = 10f;
+    public float _speed = 50f;
     // Start is called before the first frame update
     void Start()
     {
-        _Rigidbody.velocity = transform.forward * _speed;
-        Destroy(gameObject, 10f);
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        _Rigidbody.velocity = transform.forward * _speed;
+        Destroy(gameObject, 15f);
     }
     void OnCollisionEnter(Collision collision)
     {
         Destroy(gameObject);
-        Debug.Log("collision bullet !! ");
+        Debug.Log(collision.collider.name);
+
     }
+
 }

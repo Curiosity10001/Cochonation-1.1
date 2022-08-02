@@ -27,17 +27,17 @@ public class PlayerMovement : MonoBehaviour
         _rigidbodyp.MoveRotation(r);
 
        if (Input.GetButtonDown("Fire1")){
-            for (int i = 0; i < 5; i++) 
-            {
+            
+            
               Object.Instantiate(_projectile, _parent);
-            }
+            
         }
         
 
     }
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("collision !! ");
+        
     }
 }
     
