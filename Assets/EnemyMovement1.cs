@@ -26,6 +26,5 @@ public class EnemyMovement1 : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("collision Enemy !! ");
     }
 }
