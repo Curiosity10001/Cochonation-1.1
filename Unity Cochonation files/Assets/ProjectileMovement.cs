@@ -5,7 +5,8 @@ using UnityEngine;
 public class ProjectileMovement : MonoBehaviour
 {
     public Rigidbody _Rigidbody;
-    public float _speed = 50f;
+    public float _speed = 100f;
+    public LayerMask _enemy;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,14 +16,25 @@ public class ProjectileMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        Destroy(gameObject, 30f);
+    }
+
+    private void FixedUpdate()
+    {
         _Rigidbody.velocity = transform.forward * _speed;
-        Destroy(gameObject, 15f);
     }
     void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
-        Debug.Log(collision.collider.name);
 
+        if (collision.gameObject.tag.Equals(_enemy) )
+            {
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+            };
+        Destroy(gameObject);
+
+        
     }
 
 }

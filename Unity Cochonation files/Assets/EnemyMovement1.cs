@@ -6,9 +6,8 @@ public class EnemyMovement1 : MonoBehaviour
 {
     public Transform _player;
     public Rigidbody _rigidbodyE;
-    public GameObject Bombes;
     public float _speed = 50;
-    public Transform _parent;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -18,11 +17,13 @@ public class EnemyMovement1 : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {  
+    }
+
+    private void FixedUpdate()
     {
         this.transform.LookAt(_player.transform);
-        _rigidbodyE.velocity= transform.forward*_speed;
-        
-        Object.Instantiate(Bombes, _parent);
+        _rigidbodyE.velocity = transform.forward * _speed;
     }
     private void OnCollisionEnter(Collision collision)
     {
