@@ -371,7 +371,6 @@ GameObject:
   - component: {fileID: 5653660666106653538}
   - component: {fileID: 5653660666106653537}
   - component: {fileID: 5653660666106653536}
-  - component: {fileID: 7916433425306718121}
   - component: {fileID: 4532929108497984451}
   - component: {fileID: 2146760672004467802}
   m_Layer: 7
@@ -463,23 +462,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3625232, y: 1.4647232, z: 1.4896253}
   m_Center: {x: -0.027343115, y: -0.1729821, z: 0.24481137}
---- !u!114 &7916433425306718121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5653660666106653542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4e2412760482ff418ac100c52789baf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _player: {fileID: 8670573596097582678, guid: 34f8639236c43894d94abe329676f37f, type: 3}
-  _rigidbodyE: {fileID: 4532929108497984451}
-  Bombes: {fileID: 0}
-  _speed: 50
-  _parent: {fileID: 751208676059298567}
 --- !u!54 &4532929108497984451
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -494,7 +476,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 16
   m_CollisionDetection: 0
 --- !u!114 &2146760672004467802
 MonoBehaviour:
@@ -510,8 +492,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _parent: {fileID: 751208676059298567}
   _bombes: {fileID: 7954041687943590868, guid: b9607f8a32449654882831af02b0097b, type: 3}
-  _speed: 50
-  _rigidbodyE2: {fileID: 0}
+  _speed: 100
+  _rigidbodyE2: {fileID: 4532929108497984451}
+  _rotationSpeed: 50
 --- !u!1 &6021172077046780109
 GameObject:
   m_ObjectHideFlags: 0
