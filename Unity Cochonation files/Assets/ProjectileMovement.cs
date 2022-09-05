@@ -6,7 +6,7 @@ public class ProjectileMovement : MonoBehaviour
 {
     public Rigidbody _Rigidbody;
     public float _speed = 100f;
-    public LayerMask _enemy;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +27,7 @@ public class ProjectileMovement : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
 
-        if (collision.gameObject.tag.Equals(_enemy) )
+        if (collision.gameObject.CompareTag("enemy"))
             {
             Destroy(gameObject);
             Destroy(collision.gameObject);

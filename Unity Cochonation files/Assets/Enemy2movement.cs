@@ -7,12 +7,10 @@ public class Enemy2movement : MonoBehaviour
     public Transform _parent;
     public GameObject _bombes;
     public float _speed = 100f;
-    public Rigidbody _rigidbodyE2;
-    public float _rotationSpeed = 50.0f;
-
-
-    private Quaternion _Rotationdirection;
-    private float _rotationTimer = 0.0f;
+    public float _Rotationfracture = 0.27f;
+   
+    
+    
 
     // Start is called before the first frame update
     void Start()
@@ -21,20 +19,22 @@ public class Enemy2movement : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    
     void Update()
     {
-        _rotationTimer += Time.deltaTime;
-        Object.Instantiate(_bombes, _parent);
-
-        if (_rotationTimer > 1)
-        {
-            transform.rotation = Quaternion.Slerp(Random.rotation, Random.rotation, _rotationTimer);
-            _rotationTimer = 0.0f;
+        
+        Quaternion _A = Quaternion.Euler(0, Random.Range(0, 360), 0);
+        Quaternion _B = Quaternion.Euler(0, Random.Range(0, 360), 0);
+        for (float _t = 0; _t < 1; _t += (Time.deltaTime/_Rotationfracture)) {
+            transform.rotation = Quaternion.Slerp(_A,_B, _t);
         }
+      
+      
     }
     private void FixedUpdate()
     {
-      
-        _rigidbodyE2.velocity = transform.forward * _speed;
+
+        this.transform.Translate(Vector3. * _speed* Time.deltaTime , Space.World);
     }
 }
