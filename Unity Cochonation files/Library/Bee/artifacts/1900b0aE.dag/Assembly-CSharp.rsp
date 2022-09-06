@@ -351,9 +351,9 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/BombeAttack.cs"
 "Assets/CamMovement.cs"
+"Assets/EnemiesSpawn.cs"
 "Assets/Enemy2movement.cs"
 "Assets/EnemyMovement1.cs"
-"Assets/enmiesSpawn.cs"
 "Assets/PlayerMovement.cs"
 "Assets/ProjectileMovement.cs"
 -langversion:9.0

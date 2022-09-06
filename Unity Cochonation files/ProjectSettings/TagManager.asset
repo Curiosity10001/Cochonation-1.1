@@ -4,7 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - bombes
   - enemy
+  - WALL1
+  - WALL2
+  - WALL3
+  - WALL4
   layers:
   - Default
   - TransparentFX
@@ -14,7 +19,7 @@ TagManager:
   - UI
   - Player
   - enemy
-  - 
+  - bombes
   - 
   - 
   - 
