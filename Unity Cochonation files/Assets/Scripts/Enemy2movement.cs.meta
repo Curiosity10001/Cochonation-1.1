@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a4abb1d3b71c5b146986ba6f849e81ca
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _parent: {instanceID: 0}
+  - _bombes: {fileID: 7954041687943590868, guid: b9607f8a32449654882831af02b0097b, type: 3}
+  - _rgdbdEnnemy2: {fileID: 4532929108497984451, guid: c30f12c85bfac4443834a454cd1bb522, type: 3}
+  - _ArenaSide1X: {instanceID: 0}
+  - _ArenaSide2X: {instanceID: 0}
+  - _ArenaSide3Z: {instanceID: 0}
+  - _ArenaSide4Z: {instanceID: 0}
+  - _heroy: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

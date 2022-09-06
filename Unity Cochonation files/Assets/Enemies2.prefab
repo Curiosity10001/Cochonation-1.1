@@ -485,7 +485,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5653660666106653542}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4abb1d3b71c5b146986ba6f849e81ca, type: 3}
   m_Name: 
@@ -495,10 +495,6 @@ MonoBehaviour:
   _speed: 100
   _Rotationfracture: 0.26
   _rgdbdEnnemy2: {fileID: 4532929108497984451}
-  _ArenaSide1X: {fileID: 0}
-  _ArenaSide2X: {fileID: 0}
-  _ArenaSide3Z: {fileID: 0}
-  _ArenaSide4Z: {fileID: 0}
 --- !u!1 &6021172077046780109
 GameObject:
   m_ObjectHideFlags: 0

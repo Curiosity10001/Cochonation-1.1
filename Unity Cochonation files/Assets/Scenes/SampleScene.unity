@@ -483,8 +483,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 215664101}
   - {fileID: 1252836438}
+  - {fileID: 215664101}
   - {fileID: 280932515}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -678,7 +678,7 @@ GameObject:
   - component: {fileID: 1252836438}
   - component: {fileID: 1252836439}
   m_Layer: 0
-  m_Name: GameObject of spawn script
+  m_Name: spawn script
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -697,7 +697,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 587828371}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1252836439
 MonoBehaviour:
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemies1: {fileID: 5653660666106653542, guid: 46d617b076bb2d54fbef974241d9c1f7, type: 3}
   _enemies2: {fileID: 5653660666106653542, guid: c30f12c85bfac4443834a454cd1bb522, type: 3}
-  _maxEnemiesInLvl: 5
+  _maxEnemiesInLvl: 9
 --- !u!1 &1413102747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,7 +1068,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8670573596097582678, guid: 34f8639236c43894d94abe329676f37f, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8670573596097582678, guid: 34f8639236c43894d94abe329676f37f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1113,6 +1113,10 @@ PrefabInstance:
     - target: {fileID: 8670573596097582679, guid: 34f8639236c43894d94abe329676f37f, type: 3}
       propertyPath: m_Name
       value: CochonHero
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670573596097582680, guid: 34f8639236c43894d94abe329676f37f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34f8639236c43894d94abe329676f37f, type: 3}
